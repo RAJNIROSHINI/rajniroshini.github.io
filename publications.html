@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Rajni Kaushik</title>
+  <meta name="description" content="Peer-reviewed research, book chapters, and conference presentations by Dr. Rajni Kaushik." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Rajni Kaushik</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="contact.html" class="nav-cta">Connect</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="about.html">About</a></li>
+      <li><a href="expertise.html">Expertise</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="speaking.html">Speaking</a></li>
+      <li><a href="contact.html">Connect</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Publications &amp; research</h1>
+      <p>Peer-reviewed journals, book chapters, conference presentations, and a US patent.</p>
+    </div>
+  </section>
+
+  <section class="publications-section">
+    <div class="container">
+
+      <!-- FILTER BUTTONS -->
+      <div class="pub-filter">
+        <button class="filter-btn active" onclick="filterPubs('all', this)">All</button>
+        <button class="filter-btn" onclick="filterPubs('water', this)">Water Safety</button>
+        <button class="filter-btn" onclick="filterPubs('sanitation', this)">Sanitation</button>
+        <button class="filter-btn" onclick="filterPubs('air', this)">Air Quality</button>
+        <button class="filter-btn" onclick="filterPubs('circular', this)">Circular Economy</button>
+        <button class="filter-btn" onclick="filterPubs('book', this)">Book Chapters</button>
+      </div>
+
+      <!-- EXTERNAL LINKS -->
+      <div style="display:flex; gap:1rem; margin-bottom:2.5rem; flex-wrap:wrap;">
+        <a href="https://www.researchgate.net/profile/Rajni-Kaushik" target="_blank" rel="noopener" class="btn-secondary" style="font-size:0.85rem; padding:0.5rem 1.25rem;">View on ResearchGate ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Rajni+Kaushik" target="_blank" rel="noopener" class="btn-secondary" style="font-size:0.85rem; padding:0.5rem 1.25rem;">Google Scholar ↗</a>
+      </div>
+
+      <div class="pub-list" id="pubList">
+
+        <div class="pub-item" data-cat="water">
+          <span class="pub-tag">Water Safety · 2014 · PLOS ONE</span>
+          <h3>Microbial Quality and Phylogenetic Diversity of Fresh Rainwater and Tropical Freshwater Reservoir</h3>
+          <p class="pub-plain">What microbial communities live in Singapore's tropical reservoirs and how does rainwater affect their safety? This study mapped the full diversity of microbes — including pathogens — in a tropical freshwater system, contributing to evidence for reservoir water safety monitoring.</p>
+          <p class="pub-citation">Kaushik R, Balasubramanian R, Dunstan H (2014). PLOS ONE, 9: e100737.</p>
+        </div>
+
+        <div class="pub-item" data-cat="circular">
+          <span class="pub-tag">Circular Economy · 2014 · Bioresource Technology</span>
+          <h3>Enzyme-assisted hydrothermal treatment of food waste for co-production of hydrochar and bio-oil</h3>
+          <p class="pub-plain">Can food waste be converted into useful fuels and materials? This research developed an enzyme-assisted process to extract bio-oil, biochar, and chemicals from food waste — a circular economy solution for waste management in urban settings.</p>
+          <p class="pub-citation">Kaushik R, Parshetti GK, Liu Z, Balasubramanian R (2014). Bioresource Technology, 168.</p>
+        </div>
+
+        <div class="pub-item" data-cat="water">
+          <span class="pub-tag">Water Safety · 2013 · Water Research</span>
+          <h3>Inactivation of Escherichia coli Using Gene Silencing and Chlorination: A Comparative Toxicity Assessment</h3>
+          <p class="pub-plain">Chlorination is the world's most common water disinfection method — but can gene silencing match or improve on it? This paper compared both approaches for killing E. coli, opening new directions in pathogen inactivation research.</p>
+          <p class="pub-citation">Kaushik R, Balasubramanian R (2013). Water Research, 48: 519–528.</p>
+        </div>
+
+        <div class="pub-item" data-cat="air water">
+          <span class="pub-tag">Air Quality · Water Safety · 2013 · Science of the Total Environment</span>
+          <h3>Discrimination of viable from non-viable Gram-negative bacterial pathogens in airborne particles using PMA-assisted qPCR</h3>
+          <p class="pub-plain">Standard tests often detect dead bacteria alongside live ones, overstating risk. This paper developed a method to distinguish live from dead airborne pathogens — making air quality monitoring far more accurate for public health purposes.</p>
+          <p class="pub-citation">Kaushik R, Balasubramanian R (2013). Science of the Total Environment, 449: 237–243.</p>
+        </div>
+
+        <div class="pub-item" data-cat="air water">
+          <span class="pub-tag">Air Quality · Water Safety · 2012 · Applied and Environmental Microbiology</span>
+          <h3>Influence of Air Quality on the Composition of Microbial Pathogens in Fresh Rainwater</h3>
+          <p class="pub-plain">When polluted air meets rain, what happens to the water? This study showed how air quality directly shapes the microbial content of rainwater — with implications for drinking water safety in dense urban environments.</p>
+          <p class="pub-citation">Kaushik R, Balasubramanian R (2012). Applied and Environmental Microbiology, 78(8): 2813.</p>
+        </div>
+
+        <div class="pub-item" data-cat="air water">
+          <span class="pub-tag">Air Quality · Water Safety · 2012 · Atmospheric Environment</span>
+          <h3>Assessment of Bacterial Pathogens in Fresh Rainwater and Airborne Particulate Matter using Real-Time PCR</h3>
+          <p class="pub-plain">Using real-time PCR, this study assessed how bacterial pathogens move between air and water — building the evidence base for integrated air-water quality monitoring in tropical cities.</p>
+          <p class="pub-citation">Kaushik R, Balasubramanian R (2012). Atmospheric Environment, 46: 131–139.</p>
+        </div>
+
+        <div class="pub-item" data-cat="water">
+          <span class="pub-tag">Water Safety · 2011 · Critical Reviews in Environmental Science and Technology</span>
+          <h3>Methods and Approaches for Detection of Cyanotoxins in Environmental Samples: A Review</h3>
+          <p class="pub-plain">Cyanotoxins from algal blooms are a growing threat to drinking water globally. This comprehensive review mapped existing detection methods and gaps — becoming a reference for researchers and water safety regulators worldwide.</p>
+          <p class="pub-citation">Kaushik R, Balasubramanian R (2011). Critical Reviews in Environmental Science and Technology.</p>
+        </div>
+
+        <div class="pub-item" data-cat="water">
+          <span class="pub-tag">Water Safety · 2009 · Sensors and Actuators B: Chemical</span>
+          <h3>Real-time PCR-based microfluidic array chip for simultaneous detection of multiple waterborne pathogens</h3>
+          <p class="pub-plain">Detecting multiple pathogens in tap water simultaneously, in a handheld device? This paper described a breakthrough microfluidic platform that makes rapid, portable water pathogen testing possible — a tool directly relevant for low-resource settings.</p>
+          <p class="pub-citation">Ramalingam N, Rui Z, Liu HB, Dai CC, Kaushik R, et al. (2009). Sensors and Actuators B: Chemical.</p>
+        </div>
+
+        <!-- BOOK CHAPTERS -->
+        <div class="pub-item" data-cat="book sanitation">
+          <span class="pub-tag">Book Chapter · Sanitation</span>
+          <h3>Biosolids Management in India</h3>
+          <p class="pub-plain">A chapter examining the state of biosolids management — the safe handling of treated human waste — in India, with policy implications for circular sanitation and resource recovery.</p>
+          <p class="pub-citation">In: Compendium on Biosolids Management: Way Ahead for India. Global Sanitation Centre of Excellence, IIT Palakkad.</p>
+        </div>
+
+        <div class="pub-item" data-cat="book">
+          <span class="pub-tag">Book Chapter · Nanotechnology</span>
+          <h3>Biological Synthesis of Silver Nanoparticles and Assessment of their Bactericidal Activity</h3>
+          <p class="pub-plain">Exploring green synthesis routes for silver nanoparticles — materials with potential for water treatment and antimicrobial applications — and testing their effectiveness against bacteria.</p>
+          <p class="pub-citation">In: Green Nanotechnology and the Environment. Elsevier, pp. 107–120.</p>
+        </div>
+
+        <div class="pub-item" data-cat="book water">
+          <span class="pub-tag">Book Chapter · Water Safety</span>
+          <h3>Biological Contaminants in Drinking Water: Emerging Issues and Regulatory Trends</h3>
+          <p class="pub-plain">An overview of emerging biological threats to drinking water safety and how regulatory frameworks are (and aren't) keeping pace — aimed at policymakers and water safety professionals.</p>
+          <p class="pub-citation">In: Biotechnological Approaches for Sustainable Development. Allied Publishers.</p>
+        </div>
+
+        <!-- PATENT -->
+        <div class="pub-item" data-cat="all">
+          <span class="pub-tag" style="color: var(--accent);">US Patent · 2006</span>
+          <h3>Improved Detergent Composition for Anti-Acne Benefits — US20060111259</h3>
+          <p class="pub-plain">Co-invented as part of the Lifebuoy Clear Skin launch at Unilever Research India. Developed and validated a novel detergent formulation with proven anti-acne microbiological activity.</p>
+          <p class="pub-citation">Kaushik R et al. (2006). United States Patent US20060111259.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-name">Rajni Kaushik</div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/rajni-kaushik" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.researchgate.net/profile/Rajni-Kaushik" target="_blank" rel="noopener">ResearchGate</a>
+          <a href="mailto:rajni.kaushik@gmail.com">Email</a>
+        </div>
+        <div class="footer-copy">© 2025 Rajni Kaushik</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    function filterPubs(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.pub-item').forEach(item => {
+        if (cat === 'all') {
+          item.style.display = 'block';
+        } else {
+          item.style.display = item.dataset.cat.includes(cat) ? 'block' : 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
