@@ -42,7 +42,7 @@ section { padding: 5rem 0; }
 .btn-outline { border: 1.5px solid var(--ink); color: var(--ink); padding: 0.8rem 1.8rem; border-radius: 2px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.06em; transition: all 0.2s; display: inline-block; }
 .btn-outline:hover { background: var(--ink); color: var(--white); }
 .hero-photo-wrap { position: relative; display: flex; justify-content: center; }
-.hero-photo { width: 340px; height: 400px; object-fit: cover; object-position: top center; border-radius: 4px; box-shadow: 12px 12px 0 var(--teal-mid); position: relative; z-index: 1; }
+.hero-photo { width: 340px; height: 400px; object-fit: cover; object-position: top center; border-radius: 3px; box-shadow: 6px 6px 0 var(--teal-mid); position: relative; z-index: 1; }
 .stat-strip { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-top: 3rem; }
 .stat-item { padding: 1.5rem 0; text-align: center; border-right: 1px solid var(--border); }
 .stat-item:last-child { border-right: none; }
